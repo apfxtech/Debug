@@ -4,18 +4,12 @@
 #define DEBUG_LEVEL_ERROR   1   // ошибки
 #define DEBUG_LEVEL_WARN    2   // + предупреждения
 #define DEBUG_LEVEL_INFO    3   // + информация
+//#define DEBUG_LEVEL_ITER - режим с возвратом каретки в циклах (планируется)
 #define DEBUG_LEVEL_DEBUG   4   // + отладка
 #define DEBUG_LEVEL_TRACE   5   // + трассировка
 
 #ifndef DEBUG_LEVEL
     #define DEBUG_LEVEL 0
-#endif
-
-#ifndef DEBUG_WARNING_H
-#define DEBUG_WARNING_H
-#if DEBUG_LEVEL > 3
-    #warning "ВНИМАНИЕ! Включен режим отладки/трассировки."
-#endif
 #endif
 
 #include <stdint.h>
